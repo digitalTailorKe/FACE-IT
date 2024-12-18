@@ -1,0 +1,18 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Form</title>
+</head>
+<body>
+    <form action="http://localhost:8000/compare" method="post" enctype="multipart/form-data">
+        <label for="known_image">Known Image:</label>
+        <input type="file" id="known_image" name="known_image" required><br><br>
+        <label for="compared_image">Compared Image:</label>
+        <input type="file" id="compared_image" name="compared_image" required><br><br>
+        <button type="submit">Compare Images</button>
+    </form>
+</body>
+</html>
